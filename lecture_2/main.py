@@ -15,7 +15,8 @@ def generate_profile(age: int) -> str:
         return "Adult"
     return "Invalid age"
 
-def collect_hobbies () -> list[str]:
+
+def collect_hobbies() -> list[str]:
     """Collect hobbies from user input until 'stop' is typed.
 
     Returns:
@@ -30,9 +31,10 @@ def collect_hobbies () -> list[str]:
         hobbies.append(word)
     return hobbies
 
+
 def print_profile(profile: dict[str, str | int | list[str]]) -> None:
     """Prints user profile.
-    
+
     Args:
         profile (dict): Dictionary contains info about user
     """
@@ -50,7 +52,7 @@ def print_profile(profile: dict[str, str | int | list[str]]) -> None:
         print("You didn't mention any hobbies.")
     else:
         print(f"Favorite Hobbies ({len(hobbies)}):")
-        for h in hobbies: 
+        for h in hobbies:
             print(f"- {h}")
     print("---")
 
